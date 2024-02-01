@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import cv from '../media/Resume-Liaqat-Ali-React-Developer.pdf'
+import cv from '../media/Liaqat Ali-React-Developer.pdf'
 import ScrollTrigger from 'react-scroll-trigger'
 import CountUp from 'react-countup'
 import dp from '../media/dvStTTcICreSRyr97FsFO-removebg-preview_0 (1).png'
