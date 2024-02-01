@@ -97,9 +97,10 @@ padding: 0.5rem 0.7rem;
   color: white;
 }
 .navbar-brand{
-  font-size: 2.4rem;
+   font-size: 3rem;
   font-weight: 700;
   color: white;
+  font-family: 'Rajdhani', sans-serif;
 }
 .navbar-brand:hover{
   color: white;
