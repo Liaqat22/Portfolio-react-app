@@ -24,7 +24,7 @@ body {
 .myname{
 
   font-family: 'Romanesco', cursive;
-  font-size: 9rem;
+  font-size: 8rem;
   color: #00b4d8;
   letter-spacing: 0.5rem;}
 .row{
@@ -167,7 +167,7 @@ padding: 0.5rem 0.7rem;
   font-size: 3rem;
 }
 .name{
-  font-size: 7rem ;
+  font-size: 6rem ;
 }
 
 /* ================================================= card ============================================================ */
