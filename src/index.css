@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rajdhani&family=Italianno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Alex Brush', cursive;
+font-family: 'Rajdhani', sans-serif; */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Rajdhani', sans-serif; */
+  background-color: #1c2227;
+}
+.myname{
+
+  font-family: 'Romanesco', cursive;
+  font-size: 9rem;
+  color: #00b4d8;
+  letter-spacing: 0.5rem;}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0rem;
+
+}
+.rows{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headings {
+  font-size: 2rem;
+  font-weight: 500;
+  /* font-family: 'Montserrat', sans-serif; */
+color: #61DBFB;
+padding: 0.5rem;
+
+}
+.headingxl {
+  font-size: 4rem;
+  font-weight: 600;
+  /* font-family: 'Montserrat', sans-serif; */
+color: white;
+padding: 0.5rem;
+}
+
+.paratext {
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.55;
+padding: 0.5rem 0.7rem;
+}
+
+.active {
+  border-bottom: 0.2rem solid #61DBFB;
+}
+
+.btn {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 0.8rem 3rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 38px #61DBFB;
+  transition: 0.5s;
+}
+.dwnldbtn{
+  padding:0.8rem 2.2rem ;
+}
+.containerfluid{
+  padding: 0rem 2rem;
+  margin: 3rem 0rem;
+  overflow: hidden;
+}
+
+.col-md-3{  /* for cards */
+  overflow: hidden;
+}
+/* ============================= header ===================================================== */
+.navbar {
+  padding: 2rem;
+  background-color: rgb(33 37 41);
+  color: white;
+}
+.navbar-brand{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+}
+.navbar-brand:hover{
+  color: white;
+}
+.nav-item {
+  font-size: 1.8rem;
+  padding: 0rem 3.5rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(238, 224, 224);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: white;
+}
+
+.navbar-nav {
+  padding: 0rem 6rem;
+}
+
+/* ============================= footer ===================================================== */
+
+.footer{
+  padding: 2rem;
+  font-size: 2rem;
+  /* text-align: center; */
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+/* ======================================= contacts ===================================================== */
+.form-control{
+  padding: 1.3rem;
+  background-color: #31373c;
+  border: 0.2rem solid  #61DBFB;
+  border-radius: 0.6rem;
+  color: white;
+  font-size: 1.6rem;
+
+}
+.form-control:focus{
+  background-color: #31373c;
+}
+.form-control::placeholder{
+  color: white;
+}
+
+/* ======================================= icons =============================================================== */
+.fa-phone, .fa-envelope ,.fa-wrench , .fa-microsoft , .fa-code,.fa-pen{
+  padding: 2rem;
+  background:  #61DBFB;
+  border-radius: 50%;
+  color: white;
+  font-size: 2.5rem;
+}
+.fa-whatsapp , .fa-linkedin , .fa-github{
+  font-size: 3rem;
+}
+.name{
+  font-size: 7rem ;
+}
+
+/* ================================================= card ============================================================ */
+.card{
+  padding: 1.2rem;
+  height: 36.8rem;
+  margin: 0.7rem 0rem;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 0.4rem #61DBFB;
+
+}
+.card:hover{
+  background: linear-gradient(358deg, #61dbfbba, #0a0c0cfc);
+  transition: 0.5s;
+}
+.services{
+  margin: 2.5rem;
+}
+/* ========================================= images ======================================================================== */
+.imgdp{
+  width: 60%;
+  height: auto;
+}
+.bgdpimg{
+  background-image: url(../src/media/—Pngtree—blue\ gradient\ technology\ circle_4869743.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+.imgproject{
+  width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 0.4rem #61DBFB;
+
+}
+.imgproject:hover{
+  box-shadow: 0px 0px 2rem #61DBFB;
+  transition: 0.5s;
+
+}
+.projectbtn{
+  border: none;
+  background: transparent;
+  color:#fecd1a;
+  padding: 0px 1rem 3px 1rem;
+  font-size: 1.9rem;
+font-weight: 400;
+transition: 0.3s;
+}
+.projectbtn:hover{
+  border: none;
+  background: transparent;
+  color:#fecd1a;
+translate: 1rem;  
+box-shadow: none;
+}
+
+.fa-arrow-right{
+  font-size: 1.4rem;
+}
+/* ===================================== counting ========================================================================== */
+.countmain{
+  border-radius: 1rem;
+  background-color:#151d24;
+}
+.count{
+  font-size: 6.2rem;
+  font-weight: 600;
+}
+.countcol{
+  text-align: center;
+  margin: 2rem 0rem;
+}
+.counttext{
+  font-size: 3rem;
+}
+.contactcol{
+  text-align: center;
+  background: #151d24;
+  padding: 2.2rem 0rem;
+  border-radius: 1rem;
+
+}
+
+/* ============================================ for responsiveness ================================================== */
+
+@media screen and (max-width : 575px) {
+  html {
+    font-size: 53.5%;
+  }
+
+  .navbar-nav {
+    padding: 0rem 0rem;
+  }
+
+  .contactbtn {
+    display: none;
+  }
+  .forwidth, .forwidth1{
+    text-align: center;
+  }
+  .footer{
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (min-width : 650px) and (max-width:767px) {
+  html {
+    font-size: 60.5%;
+  }
+  .contactbtn {
+    display: none;
+  }
+  .navbar-nav {
+    padding: 0rem 0rem;
+  }
+  .forwidth{
+width: 30%;
+  }
+  .forwidth1{
+width: 70%;
+  }
+  .col-md-3{
+    width: 45%;
+    padding: initial;
+margin: 1rem;
+overflow: visible;
+  }
+  .footer{
+    text-align: center;
+  }
+
+  
+}
+@media screen and (min-width : 767px) and (max-width:1000px) {
+  .col-md-3{
+    width: 50%;
+  }
+  .footer{
+    text-align: center;
+  }
+  .imgdp{
+    width: 100%;
+  }
+  .bgdpimg{
+    background-image: url(../src/media/bubbles-png-44346.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: top;
+  }
+  .contactbtn {
+    display: none;
+  }
+
+  .reswidth1200px{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width : 1000px) and (max-width:1200px) {
+  .col-md-3{
+    width: 50%;
+  }
+  .reswidth1200px{
+    width: 100%;
+  }
+  .footer{
+    text-align: center;
+  }
+  .imgdp{
+    width: 80%;
+  }
+  .bgdpimg{
+    background-image: url(../src/media/bubbles-png-44346.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: top;
+  }
+  .contactbtn {
+    display: none;
+  }
+
+}
+@media screen and (min-width : 1200px) and (max-width:1300px) {
+
+  .imgdp{
+    width: 80%;
+  }
+  .bgdpimg{
+    background-image: url(../src/media/bubbles-png-44346.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: top;
+  }
+  .contactbtn {
+    display: none;
+  }
+  .reswidth1200px{
+    width: 100%;
+  }
+}
+@media screen and (min-width : 1600px) and (max-width:2700px) {
+  body{
+    width: 1600px;
+    margin: 0 auto;
+  }
+}
