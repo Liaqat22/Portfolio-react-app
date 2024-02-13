@@ -8,10 +8,11 @@ function Header() {
   <nav className="navbar navbar-expand-lg bg-dark" style={{overflow:'hidden'}} >
   <div className="container-fluid">
     <Link className="navbar-brand " to="/"  data-aos="fade-right" style={{transitionDelay:'0.3s',color:'white'}}><i className="fa-brands fa-react fa-spin fa-spin-reverse" style={{color:' #61DBFB'}}/> <span style={{color:' #61DBFB'}}>React</span> Developer</Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+    <div className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
       {/* <span className="navbar-toggler-icon" /> */}
-<i className="fa-solid fa-bars" style={{color:'white' , fontSize:'25px'}}/>
-    </button>
+      <i className="fa-solid fa-bars-staggered fa-3x p-2" style={{color:"white"}}/>
+
+    </div>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
