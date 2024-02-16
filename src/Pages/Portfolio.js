@@ -42,14 +42,21 @@ function Portfolio() {
             <div className='text-center m-3'>
        {loading&&  <Spin tip="Loading" size="large"/>}
       </div>
-              <div className='col-md-6'>
                 <h1 className='headings'>- Project {i + 1}</h1>
-                <h1 className='headingxl '>{project.name}</h1>
+              <div className='col-md-6'>
+                <h1 className='headingxl 'style={{color:"#f8f7ff"}}>{project.name}</h1>
                 <p className='paratext ' data-aos="fade-right">
                   {project.description}
                 </p>
 
-                <div className='btun m-3' data-aos="fade-left"><i className="fa-solid fa-arrow-right" style={{ color: 'yellow'}} />
+
+
+              </div>
+              <div className='col-md-6' data-aos="fade-left">
+                <img className="imgproject" src={`https://personal-portfolio-api-s.vercel.app/api/v1/project/project-photo/${project._id}`} alt='.' />
+              </div>
+              
+              <div className='btun m-3' data-aos="fade-left"><i className="fa-solid fa-arrow-right" style={{ color: 'yellow'}} />
                   <NavLink
                     className='btn btn-secondary projectbtn'
                     to={project.link}
@@ -60,12 +67,6 @@ function Portfolio() {
                     Click to explore
                   </NavLink>
                 </div>
-
-
-              </div>
-              <div className='col-md-6' data-aos="fade-left">
-                <img className="imgproject" src={`https://personal-portfolio-api-s.vercel.app/api/v1/project/project-photo/${project._id}`} alt='.' />
-              </div>
             </div>
           </div>
         ))
