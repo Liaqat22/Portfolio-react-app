@@ -7,6 +7,7 @@ import dp from '../media/dvStTTcICreSRyr97FsFO-removebg-preview_0 (1).png'
 import { message, Spin } from 'antd';
 import axios from 'axios';
 import Projects from './Projects'
+import Skills from './Skills'
 
 
 
@@ -82,7 +83,7 @@ function Home() {
   useEffect(()=>{
     getCertificate()
   },[])
-  return (
+  return ( 
     <div>
 
       <div className='container-fluid containerfluid'>
@@ -105,7 +106,7 @@ function Home() {
         </div>
 
       </div>
-
+<Skills/>
       {/* =================================================== Services ========================================================================== */}
 
       <div className='container-fluid containerfluid' style={{ overflow: 'hidden' }}>
