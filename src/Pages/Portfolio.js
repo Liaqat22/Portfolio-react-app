@@ -56,7 +56,7 @@ function Portfolio() {
                 <img className="imgproject" src={`https://personal-portfolio-api-s.vercel.app/api/v1/project/project-photo/${project._id}`} alt='.' />
               </div>
               
-              <div className='btun m-3' data-aos="fade-left"><i className="fa-solid fa-arrow-right" style={{ color: 'yellow'}} />
+              <div className='btun m-3 p-3' data-aos="fade-left"><i className="fa-solid fa-arrow-right" style={{ color: 'yellow'}} />
                   <NavLink
                     className='btn btn-secondary projectbtn'
                     to={project.link}
