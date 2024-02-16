@@ -13,8 +13,23 @@ font-family: 'Rajdhani', sans-serif; */
 html {
   font-size: 62.5%;
 }
+/* ======================== skills ================================================================ */
+.skillsInner{
+background-color: #ffffff29;
+padding: 1rem 0rem;
+margin: 0.7rem 0rem;
+border-radius: 0.6rem;
+transition: 0.3s;
+cursor: pointer;
+}
+.skillsInner:hover{
+background-color: #ffffff46;
 
+}
+.skillphoto{
+  filter: drop-shadow(.2rem .4rem .7rem rgb(0, 0, 0));
 
+}
 body {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Poppins', sans-serif;
@@ -51,7 +66,6 @@ padding: 0.5rem;
 .headingxl {
   font-size: 3rem;
   font-weight: 600;
-  /* font-family: 'Montserrat', sans-serif; */
 color: white;
 padding: 0.5rem;
 }
@@ -161,11 +175,13 @@ padding: 0.5rem 0.7rem;
 
 /* ======================================= icons =============================================================== */
 .fa-phone, .fa-envelope ,.fa-wrench , .fa-microsoft , .fa-code,.fa-pen{
-  padding: 2rem;
-  background:  #61DBFB;
+  padding: 1rem;
+  /* background:  #61DBFB; */
+
+  filter: drop-shadow(1px 2px 0px #61DBFB);
   border-radius: 50%;
   color: white;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .fa-whatsapp , .fa-linkedin , .fa-github{
   font-size: 3rem;
@@ -181,6 +197,7 @@ padding: 0.5rem 0.7rem;
   margin: 0.7rem 0rem;
   border-radius: 0.6rem;
   box-shadow: 0px 0px 0.4rem #61DBFB;
+  transition: 0.5s;
 
 }
 .card:hover{
@@ -278,7 +295,6 @@ box-shadow: none;
   background: #151d24;
   padding: 2.2rem 0rem;
   border-radius: 1rem;
-
 }
 
 /* ============================================ for responsiveness ================================================== */
@@ -287,7 +303,9 @@ box-shadow: none;
   html {
     font-size: 53.5%;
   }
-
+.skillsOuter{
+  width: 30%;
+}
   .navbar-nav {
     padding: 0rem 0rem;
   }
@@ -305,10 +323,16 @@ box-shadow: none;
 
 }
 
+@media screen and (min-width : 575px) and (max-width:767px) {
+  .skillsOuter{
+    width: 30%;
+  }
+}
 @media screen and (min-width : 650px) and (max-width:767px) {
   html {
     font-size: 60.5%;
   }
+ 
   .contactbtn {
     display: none;
   }
