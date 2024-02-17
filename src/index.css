@@ -24,6 +24,7 @@ cursor: pointer;
 }
 .skillsInner:hover{
 background-color: #ffffff46;
+transform: scale(1.07);
 
 }
 .skillphoto{
