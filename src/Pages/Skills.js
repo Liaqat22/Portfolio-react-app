@@ -31,7 +31,7 @@ function Skills() {
                     <div className='col-md-2  skillsOuter  text-center ' key={i+1} >
                         <div className='skillsInner '>
 
-                        <img src={s.skillImg} alt= {s.skillName} className='p-3 skillphoto'/>
+                        <img src={s.skillImg} alt= {s.skillName} className='p-3 skillphoto' data-aos="zoom-out"/>
 
                         </div>
                     </div>
