@@ -1,23 +1,20 @@
 import './App.css';
 import Layout from './Layout/Layout';
 import { Routes, Route } from 'react-router-dom';
-import { lazy,Suspense } from 'react';
 
-const Home = lazy(() => import('./Pages/Home'));
-const Portfolio = lazy(() => import('./Pages/Portfolio'));
-const Contacts = lazy(() => import('./Pages/Contacts'));
+ import Home from './Pages/Home';
+ import Portfolio from './Pages/Portfolio';
+ import Contacts from './Pages/Contacts';
 
 function App() {
   return (
     <div>
       <Layout>
-        <Suspense >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contacts />} />
           </Routes>
-        </Suspense>
       </Layout>
     </div>
   );
