@@ -25,7 +25,7 @@ export const projectContent = [
      
      Projectname : 'Dashboard',
      ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Fdashboard_0.png?alt=media&token=a2989904-e9f6-4958-8a86-401da801b8ad",
-     ProjectURL : 'https://employedashboard.netlify.app',
+     ProjectURL : 'https://intern-dashboard-five.vercel.app/',
       ProjectDescription :"Discover the future of workforce management with our cutting-edge Intern Dashboard! Crafted in React, it offers a fully responsive, attractive UI, intuitive controls, and seamless task management. Elevate your team's performance and efficiency today!"
     },
     {
