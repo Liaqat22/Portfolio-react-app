@@ -21,6 +21,13 @@ export const projectContent = [
      ProjectURL : 'https://firebase-react-chat-app-virid.vercel.app/',
      ProjectDescription : "React with firebase server, Real time chat app, open the app on separated browser tabs and login with diffrent email and passwords given below.; person 1 = email : test@gmail.com, password:123456 .; person 2 : email : test2@gmail.com, password:123456"
     },
+      {
+     
+     Projectname : 'Dashboard',
+     ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Fdashboard_0.png?alt=media&token=a2989904-e9f6-4958-8a86-401da801b8ad",
+     ProjectURL : 'https://employedashboard.netlify.app',
+      ProjectDescription :"Discover the future of workforce management with our cutting-edge Intern Dashboard! Crafted in React, it offers a fully responsive, attractive UI, intuitive controls, and seamless task management. Elevate your team's performance and efficiency today!"
+    },
     {
       Projectname : 'Expense Managment System',
       ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2FExpenseMS_0.png?alt=media&token=2665a6cd-124a-4cb6-8fac-c7097f89a272",
@@ -41,13 +48,7 @@ export const projectContent = [
      },
    
    
-    {
-     
-     Projectname : 'Intern dashboard',
-     ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Fdashboard_0.png?alt=media&token=a2989904-e9f6-4958-8a86-401da801b8ad",
-     ProjectURL : 'https://employedashboard.netlify.app',
-      ProjectDescription :"Discover the future of workforce management with our cutting-edge Intern Dashboard! Crafted in React, it offers a fully responsive, attractive UI, intuitive controls, and seamless task management. Elevate your team's performance and efficiency today!"
-    },
+  
     {
  
      Projectname : 'Jessy portfolio',
