@@ -9,6 +9,7 @@ function Footer() {
             <h1 className=' text-white footer'>All Rights are Reserved &copy; Liaqat Ali 2024</h1>
             </div>
             <div className='col-md-3' style={{display:'flex',justifyContent:'space-evenly'}}>
+           <a href='https://liaqatali097306@gmail.com'><i className="fa-solid envelope fa-envelope p-0" style={{color:' #61DBFB',filter:"none"}}/></a> 
            <a href='https://www.linkedin.com/in/liaqat-ali-bb086522a/'> <i className="fa-brands fa-linkedin" style={{color:' #61DBFB'}}/></a>
            <a href='https://wa.me/qr/FTMDCAW2J6XEP1'><i className="fa-brands fa-whatsapp" style={{color:' #61DBFB'}}/></a> 
            <a href='https://github.com/Liaqat22?tab=repositories'><i className="fa-brands fa-github" style={{color:' #61DBFB'}}/></a> 
