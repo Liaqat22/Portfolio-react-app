@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { message } from 'antd';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -42,8 +43,8 @@ function Contacts() {
               <div className='col-md-9 forwidth1'><p className='headings' style={{ color: 'white' }}>+923446505923 <br />+923211961948</p></div>
             </div>
             <div className='row m-3' data-aos="fade-right" style={{ transitionDelay: '0.4s' }}>
-              <div className='col-md-2 forwidth'><i className="fa-solid fa-envelope " /></div>
-              <div className='col-md-9 forwidth1'><p className='headings' style={{ color: 'white' }}>liaqatali097306@gmail.com</p></div>
+              <div className='col-md-2 forwidth'><NavLink  to = "https://liaqatali097306@gmail.com"><i className="fa-solid fa-envelope " /></NavLink></div>
+              <div className='col-md-9 forwidth1'><NavLink  to = "https://liaqatali097306@gmail.com" style={{textDecoration:"none"}}><p className='headings' style={{ color: 'white' }}>liaqatali097306@gmail.com</p></NavLink></div>
             </div>
           </div>
           <div className='col-md-6'>
