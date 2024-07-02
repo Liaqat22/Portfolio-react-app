@@ -1,19 +1,24 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import bgvideo from '../media/bgvedeo.mp4';
+// import './Layout.css';
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
-    <div>
-      
-      <Header/>
-      <main style={{minHeight:'80vh'}}>
-        {children}
+    <div className="layout">
+      <Header />
+      <main className="main-content">
+        <div className="video-container">
+          <video className="background-video" src={bgvideo} loop autoPlay muted />
+        </div>
+        <div className="content">
+          {children}
+        </div>
+      <Footer />
       </main>
-      <Footer/>
-
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
