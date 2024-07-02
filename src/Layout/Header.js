@@ -1,13 +1,13 @@
 import React from 'react'
 import {NavLink,Link} from 'react-router-dom'
 
-function Header() {
+function Header() { 
   return (
-    <div>
+    <div className='navContainer'>
       
-  <nav className="navbar navbar-expand-lg bg-dark" style={{overflow:'hidden'}} >
+  <nav className="navbar navbar-expand-lg  " style={{overflow:'hidden'}} >
   <div className="container-fluid">
-    <Link className="navbar-brand " to="/"  data-aos="fade-right" style={{transitionDelay:'0.3s',color:'white'}}><i className="fa-brands fa-react fa-spin fa-spin-reverse" style={{color:' #61DBFB'}}/> <span style={{color:' #61DBFB'}}>React</span> Developer</Link>
+    <Link className="navbar-brand " to="/"   style={{transitionDelay:'0.3s',color:'white'}}><i className="fa-brands fa-react fa-spin fa-spin-reverse" style={{color:' #61DBFB'}}/> <span style={{color:' #61DBFB'}}>React</span> Developer</Link>
     <div className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
       {/* <span className="navbar-toggler-icon" /> */}
       <i className="fa-solid fa-bars-staggered fa-3x p-2" style={{color:"white"}}/>
@@ -31,9 +31,10 @@ function Header() {
 
       </div>
       <div className='container-fluid '>
-          <div className='row bg-dark'>
+          <div className='row '>
          
             <div className='col-md-7 reswidth1200px' style={{display:'flex',justifyContent:'space-evenly'}}>
+            <a href='https://liaqatali097306@gmail.com'><i className="fa-solid envelope fa-envelope p-0" style={{color:' #61DBFB',filter:"none"}}/></a> 
            <a href='https://www.linkedin.com/in/liaqat-ali-bb086522a/'> <i className="fa-brands fa-linkedin" style={{color:' #61DBFB'}}/></a>
            <a href='https://wa.me/qr/FTMDCAW2J6XEP1'><i className="fa-brands fa-whatsapp" style={{color:' #61DBFB'}}/></a> 
            <a href='https://github.com/Liaqat22?tab=repositories'><i className="fa-brands fa-github" style={{color:' #61DBFB'}}/></a> 
