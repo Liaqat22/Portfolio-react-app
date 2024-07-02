@@ -51,6 +51,12 @@ body {
   padding: 2.5rem 0rem;
 
 }
+.navContainer{
+  background: rgb(33 37 41 / 87%);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
 .rows{
   display: flex;
   justify-content: space-between;
@@ -109,7 +115,7 @@ padding: 0.5rem 0.7rem;
 /* ============================= header ===================================================== */
 .navbar {
   padding: 2rem;
-  background-color: rgb(33 37 41);
+  /* background-color: rgb(33 37 41); */
   color: white;
   box-shadow: -1rem 0rem 2rem #0dcaf0;
 
@@ -184,7 +190,7 @@ padding: 0.5rem 0.7rem;
   color: white;
   font-size: 3.5rem;
 }
-.fa-whatsapp , .fa-linkedin , .fa-github{
+.fa-whatsapp , .fa-linkedin , .fa-github ,.envelope{
   font-size: 3rem;
 }
 .name{
