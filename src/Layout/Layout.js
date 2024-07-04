@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import bgvideo from '../media/bgvedeo.mp4';
+import bgvideo from '../media/bgvedeo2.mp4';
 // import './Layout.css';
 
 function Layout({ children }) {
