@@ -12,7 +12,7 @@ function Layout({ children }) {
         <div className="video-container">
           <video className="background-video" src={bgvideo} loop autoPlay muted />
         </div>
-        <div className="content"style={{minHeight:"80vh"}}>
+        <div className="content"style={{minHeight:"100vh"}}>
           {children}
         </div>
       <Footer />
