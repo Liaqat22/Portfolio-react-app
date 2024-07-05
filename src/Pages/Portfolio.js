@@ -35,9 +35,9 @@ function Portfolio() {
   return (
     <>
    
+   <div className='container-fluid containerfluid mt-0' style={{ overflow: 'hidden' }}>
          {
         projects.map((project, i) => (
-          <div className='container-fluid containerfluid' style={{ overflow: 'hidden' }}>
             <div className='row' key={project._id}>
             <div className='text-center m-3'>
        {loading&&  <Spin tip="Loading" size="large"/>}
@@ -68,9 +68,9 @@ function Portfolio() {
                   </NavLink>
                 </div>
             </div>
-          </div>
         ))
       }
+          </div>
 
 
 
