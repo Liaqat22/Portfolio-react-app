@@ -86,7 +86,7 @@ function Home() {
   return ( 
     <div>
 
-      <div className='container-fluid containerfluid'>
+      <div className='container-fluid containerfluid mt-0'>
         <div className='row '>
           <div className='col-md-6 mt-3'>
             <h1 className='headings'>- Introducing</h1>
