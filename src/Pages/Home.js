@@ -135,7 +135,7 @@ function Home() {
  <Projects/>
 
       <ScrollTrigger onEnter={() => setCounton(true)} >
-        <div className='container-fluid containerfluid' style={{ overflow: 'hidden' }}>
+        <div className='container-fluid containerfluid mt-3' style={{ overflow: 'hidden' }}>
             {data.map((item)=>(
           <div className='row countmain d-flex justify-content-evenly align-items-center'>
        {loading&&  <Spin tip="Loading" size="large"/>}
