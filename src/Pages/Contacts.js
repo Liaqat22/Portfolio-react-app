@@ -29,7 +29,7 @@ function Contacts() {
   return (
     <div>
 
-      <div className='container-fluid containerfluid'>
+      <div className='container-fluid containerfluid mt-0'>
         <div className='row'>
           <div className='col-md-6'>
             <h1 className='headings'>- Contact me</h1>
