@@ -39,7 +39,7 @@ function Header() {
            <a href='https://wa.me/qr/FTMDCAW2J6XEP1'><i className="fa-brands fa-whatsapp" style={{color:' #61DBFB'}}/></a> 
            <a href='https://github.com/Liaqat22?tab=repositories'><i className="fa-brands fa-github" style={{color:' #61DBFB'}}/></a> 
             </div>
-            <div className='col-md-5'data-aos="fade-left" style={{transitionDelay:'0.8s'}}>
+            <div className='col-md-5'>
             <NavLink className='btn btn-info contactbtn'  to='/contact' style={{color:'white',whiteSpace:'nowrap'}}>Contact me</NavLink>
 
             </div>
