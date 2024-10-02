@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rajdhani&family=Italianno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Alex Brush', cursive;
+font-family: 'Rajdhani', sans-serif; */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Rajdhani', sans-serif; */
+    background-color: #37434e;
+    color: white !important;
+  } 
+  .container-fluid{
+    overflow: hidden;
+  }
+  .row{
+    padding: 1rem , .5rem !important;
+    margin: 1rem 0rem;
+  }
+li{
+  list-style: none;
+}
+  /* =============================================== layout ============================================ */
+  .layout {
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  
+  .video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(0.3rem);
+  
+  }
+  
+  .background-video {
+    position: absolute;
+   
+   width: 100%;
+    height: 100%;
+  
+    object-fit: cover;
+  }
+  
+  .main-content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjust as needed */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    /* padding: 20px; Adjust as needed */
+  }
+  /* =============================================== layout ============================================ */
+
+  /* =============================================== navbar (header) ============================================ */
+  .navContainer{
+    background: rgb(33 37 41 / 87%);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+  .navbar {
+    padding: 1rem;
+    box-shadow: -1rem 0rem 2rem #0dcaf0;
+  
+  }
+  .navbar-brand{
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  .navbar-brand:hover{
+    color: white;
+  }
+  .nav-item {
+    padding: 0rem 1rem;
+  }
+  .nav-link.active {
+    border-bottom: 0.2rem solid #61DBFB;
+  }
+  .nav-link {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: rgb(238, 224, 224);
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show>.nav-link {
+    color: white;
+  }
+  
+  .navbar-nav {
+    padding: 0rem 4rem;
+  }
+  .navres.active{
+   font-family: 'Montserrat', sans-serif !important;
+   color: #fb6f92 !important;
+  }
+  .sideRes{
+    display: none;
+  }
+  .offcanvas {
+    transition:  0.5s ; /* Adjust transition timing */
+  }
+  
+  /* =============================================== navbar (header) ============================================ */
+  .footer{   
+    font-weight: 600 !important;
+    letter-spacing: 0.2rem;
+    margin: 0;
+  }
+  .name{
+    font-weight: 900 !important;
+  }
+  .myname{
+    font-family: "Romanesco", cursive;
+    font-size: 5.5rem;
+    color: #00b4d8;
+    letter-spacing: .1rem;
+  }
+  .head1{
+    font-weight: 600 !important;
+  }
+  .section-head{
+    text-align: center; 
+    font-family: 'Alex Brush', cursive !important;
+    font-weight: 500 !important;
+    text-transform: capitalize;
+  }
+  .head2{
+    color: #00b4d8;
+  }
+
+  .imgdp{
+    /* width: 40%; */
+    height: auto;
+    position: relative;
+              z-index: 2;
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .bgdpimg ::before{
+    background-image: url(../src/media/—Pngtree—blue\ gradient\ technology\ circle_4869743.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    animation: rotate infinite 10s linear; /* You can adjust the duration and timing function as needed */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../src/media/—Pngtree—blue\ gradient\ technology\ circle_4869743.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center;
+  }
+
+  /* icons */
+  .fa-phone, .fa-envelope ,.fa-wrench  , .fa-code,.fa-pen , .service-icon , .fa-bars-staggered{ 
+    padding: 1rem;
+    /* background:  #61DBFB; */
+      border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+  }
+  .fa-whatsapp , .fa-linkedin , .fa-github ,.envelope{
+    font-size: 2rem;
+  }
+  /* ======================================= Skills ===================================================== */
+
+.btn {
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 38px #61DBFB;
+  transition: 0.5s;
+}
+.btn-hover:hover {
+  box-shadow: 0px 0px 1rem #61DBFB !important;
+  transition: 0.3s !important;
+}
+
+
+  /* ======================================= Services ===================================================== */
+
+.card-service {
+text-align: center;
+border-radius: 1rem;
+background-image: url("./media/328.jpg")  !important;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.bg-image{
+  text-align: center  !important;
+border-radius: 1rem  !important;
+background-image: url("./media/252.jpg") !important;
+background-repeat: no-repeat  !important;
+background-size: cover  !important;
+}
+
+.project-card{
+  filter: brightness(0.8) !important;
+}
+.project-card:hover{
+  transition: 0.3s !important;
+  filter: unset !important;
+}
+
+@media screen and (min-width:200px) and (max-width:991px) {
+  .sideRes{
+    display: block;
+  }
+ .sidedesktop {
+display: none;
+  }
+  .footer{
+    text-align: center;
+  }
+}
+@media screen and (min-width:770px) and (max-width:1100px) {
+  .col-md-3{
+    width: 50% !important;
+  }
+  .contact{
+display: none !important;
+  }
+}
