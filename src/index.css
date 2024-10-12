@@ -215,14 +215,14 @@ li{
 .card-service {
 text-align: center;
 border-radius: 1rem;
-background-image: url("./media/328.jpg")  !important;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F328.jpg?alt=media&token=58e5e0ab-a6e6-4068-ae3a-760222ba3323")  !important;
 background-repeat: no-repeat;
 background-size: cover;
 }
 .bg-image{
   text-align: center  !important;
 border-radius: 1rem  !important;
-background-image: url("./media/252.jpg") !important;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F252.jpg?alt=media&token=1fff5e99-5a50-4ddb-83e8-d5174b1f131e") !important;
 background-repeat: no-repeat  !important;
 background-size: cover  !important;
 }
