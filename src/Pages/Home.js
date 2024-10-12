@@ -49,8 +49,10 @@ function Home() {
             <Button variant='contained' href={cv} download="" className=' mx-1' sx={{ color: 'white', fontWeight: "bold", background: "#00b4d8" }}>Download CV</Button>
           </div>
           <div className='col-md-6 bgdpimg text-center mt-3' data-aos="fade-up" style={tDelaypoint05s} >
+                          <div className='col-md-6 bgdpimg text-center mt-3' data-aos="zoom-in"  >
 
-            <div  >
+
+            <div  data-aos="fade-up" style={tDelaypoint1s}>
               <img className="imgdp" src='https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705281/dvStTTcICreSRyr97FsFO-removebg-preview_0_1_igeyvc.png' alt='dp' />
             </div>
 
