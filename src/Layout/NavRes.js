@@ -15,7 +15,7 @@ function NavRes() {
 
           <i className="fa-solid fa-bars-staggered  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style={{ color: "white" }} />
         <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ 
-           backgroundImage: `url(${require('../media/328.jpg')})`,
+           backgroundImage: `url("https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705062/328_sfqxjz.jpg")`,
            backgroundSize: 'cover', 
            backgroundPosition: 'center', 
            backgroundRepeat: 'no-repeat' }}>
