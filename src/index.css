@@ -163,7 +163,7 @@ li{
   }
   
   .bgdpimg ::before{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F%E2%80%94Pngtree%E2%80%94blue%20gradient%20technology%20circle_4869743.png?alt=media&token=2ccac412-0bfb-44a5-8dbf-8106b7b93ee7");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/firereduxreact.appspot.com/o/%E2%80%94Pngtree%E2%80%94blue%20gradient%20technology%20circle_4869743.png?alt=media&token=59d780d0-0c10-418a-9010-96336e438bd6");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -174,7 +174,7 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F%E2%80%94Pngtree%E2%80%94blue%20gradient%20technology%20circle_4869743.png?alt=media&token=2ccac412-0bfb-44a5-8dbf-8106b7b93ee7");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/firereduxreact.appspot.com/o/%E2%80%94Pngtree%E2%80%94blue%20gradient%20technology%20circle_4869743.png?alt=media&token=59d780d0-0c10-418a-9010-96336e438bd6");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,14 +215,14 @@ li{
 .card-service {
 text-align: center;
 border-radius: 1rem;
-background-image: url("https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F328.jpg?alt=media&token=58e5e0ab-a6e6-4068-ae3a-760222ba3323")  !important;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/firereduxreact.appspot.com/o/328.jpg?alt=media&token=ac768b2c-825b-4e5f-bd9d-a3783abaaed7")  !important;
 background-repeat: no-repeat;
 background-size: cover;
 }
 .bg-image{
   text-align: center  !important;
 border-radius: 1rem  !important;
-background-image: url("https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F252.jpg?alt=media&token=1fff5e99-5a50-4ddb-83e8-d5174b1f131e") !important;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/firereduxreact.appspot.com/o/252.jpg?alt=media&token=353e5c37-e136-44bc-9cff-976bb8a90356") !important;
 background-repeat: no-repeat  !important;
 background-size: cover  !important;
 }
