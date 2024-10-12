@@ -10,7 +10,7 @@ import bootstrap from "../media/icons/pngegg.png";
 import github from "../media/icons/github.png";
 import materialUI from "../media/icons/pngwing.com.png";
 import redux from "../media/icons/redux.png";
-import bgimg from "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F252.jpg?alt=media&token=1fff5e99-5a50-4ddb-83e8-d5174b1f131e";
+import bgimg from "../media/252.jpg";
 
 function Skills() {
   const skills = [
