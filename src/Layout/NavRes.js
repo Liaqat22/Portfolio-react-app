@@ -15,7 +15,7 @@ function NavRes() {
 
           <i className="fa-solid fa-bars-staggered  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style={{ color: "white" }} />
         <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ 
-           backgroundImage: `url(${require('../media/328.jpg')})`,
+           backgroundImage: `url(${require('https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/randompics%2F328.jpg?alt=media&token=58e5e0ab-a6e6-4068-ae3a-760222ba3323')})`,
            backgroundSize: 'cover', 
            backgroundPosition: 'center', 
            backgroundRepeat: 'no-repeat' }}>
