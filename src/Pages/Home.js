@@ -48,7 +48,6 @@ function Home() {
             </Button></NavLink>
             <Button variant='contained' href={cv} download="" className=' mx-1' sx={{ color: 'white', fontWeight: "bold", background: "#00b4d8" }}>Download CV</Button>
           </div>
-          <div className='col-md-6 bgdpimg text-center mt-3' data-aos="fade-up" style={tDelaypoint05s} >
                           <div className='col-md-6 bgdpimg text-center mt-3' data-aos="zoom-in"  >
 
 
