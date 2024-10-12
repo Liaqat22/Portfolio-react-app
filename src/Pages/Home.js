@@ -20,9 +20,9 @@ function Home() {
   const tDelaypoint1s = {
     transitionDelay: '1s'
   }
-  const tDelaypoint05s = {
-    transitionDelay: '0.3s',
-  }
+  // const tDelaypoint05s = {
+  //   transitionDelay: '0.3s',
+  // }
 
 
  
