@@ -52,7 +52,7 @@ function Home() {
 
 
             <div  data-aos="fade-up" style={tDelaypoint1s}>
-              <img className="imgdp" src='https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705281/dvStTTcICreSRyr97FsFO-removebg-preview_0_1_igeyvc.png' alt='dp' />
+<img className="imgdp" src='https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705281/dvStTTcICreSRyr97FsFO-removebg-preview_0_1_igeyvc.png' alt='dp' loading="lazy" />
             </div>
 
           </div>
