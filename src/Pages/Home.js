@@ -4,7 +4,7 @@ import cv from '../media/Liaqat Ali-React-Developer.pdf'
 import ScrollTrigger from 'react-scroll-trigger'
 import CountUp from 'react-countup'
 // import dp from '../media/dvStTTcICreSRyr97FsFO-removebg-preview_0 (1).png'
-import dp from 'https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705281/dvStTTcICreSRyr97FsFO-removebg-preview_0_1_igeyvc.png'
+// import dp from 'https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705281/dvStTTcICreSRyr97FsFO-removebg-preview_0_1_igeyvc.png'
 import Projects from './Projects'
 import Skills from './Skills'
 import { Button, Card, CardContent, Typography } from '@mui/material'
@@ -51,7 +51,7 @@ function Home() {
           <div className='col-md-6 bgdpimg text-center mt-3' data-aos="zoom-in" style={tDelaypoint05s} >
 
             <div data-aos="fade-up" style={tDelaypoint1s}>
-              <img className="imgdp" src={dp} alt='dp' />
+              <img className="imgdp" src='https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705281/dvStTTcICreSRyr97FsFO-removebg-preview_0_1_igeyvc.png' alt='dp' />
             </div>
 
           </div>
