@@ -1,5 +1,11 @@
  export const projectContent = [
   {
+    projectname: "Admin Panel ",
+    ProjectImage : "https://www.admin-dashboards.com/content/images/size/w2000/2022/01/vision-ui-react-dashboard.jpg",
+    ProjectURL: "https://admin-dashboard-react-phi.vercel.app/",
+
+  },
+  {
     projectname: "React Inviocing App",
     ProjectImage : "https://www.payoneer.com/wp-content/uploads/INVOICE-PAYMENT-WITH-PAYONEER.jpg",
     ProjectURL: "https://invoicing-app-three.vercel.app/",
