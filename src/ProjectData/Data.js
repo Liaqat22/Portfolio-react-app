@@ -1,7 +1,7 @@
  export const projectContent = [
   {
     projectname: "Admin Panel ",
-    ProjectImage : "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_2iavB6SvcQeo6wFWbqL4DrC7xygU%26teamId%3Dliaqat-s-projects%26withStatus%3D1&w=640&q=75&dpl=dpl_9mkEfU9gmq9b35zjjcsRFhEg2Pts",
+    ProjectImage : "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1729438929/image_mf2pfr.jpg",
     ProjectURL: "https://admin-dashboard-react-phi.vercel.app/",
 
   },
