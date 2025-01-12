@@ -1,8 +1,14 @@
  export const projectContent = [
   {
-    projectname: "Admin Panel ",
+    projectname: "CRM Admin Panel ",
     ProjectImage : "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1729438929/image_mf2pfr.jpg",
     ProjectURL: "https://admin-dashboard-react-phi.vercel.app/",
+
+  },
+  {
+    projectname: "Furniro Furniture ",
+    ProjectImage : "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1736688091/banner_dhplf2.png",
+    ProjectURL: "https://furniro-furniture-alpha.vercel.app/",
 
   },
   {
