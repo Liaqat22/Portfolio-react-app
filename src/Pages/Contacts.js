@@ -62,7 +62,7 @@ function Contacts() {
                   className='mui-list-item mt-2 text-white tracking-widest flex flex-row gap-3 current:bg-gradient-to-l from-[#2095ac] to-[#0166b3] current:text-white current:w-[85%] rounded-r-xl'
                   button
                   component={NavLink}
-                  to="https://liaqatali097306@gmail.com"
+                  to="mailto:liaqatali097306@gmail.com"
                   sx={{ textTransform: "capitalize", paddingLeft: "0rem" }}>
                   <ListItemIcon sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <img
