@@ -15,7 +15,7 @@ const tabs = [
   
   
 const icons = [
-  { url: "https://liaqatali097306@gmail.com", title: "email", icon: "https://cdn.simpleicons.org/gmail" },
+  { url: "mailto:liaqatali097306@gmail.com", title: "email", icon: "https://cdn.simpleicons.org/gmail" },
   { url: "https://www.linkedin.com/in/liaqat-ali-bb086522a/ ", title: "linkedin", icon: "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1739507695/pngwing.com_cio5wh.png" },  // Search icon
   { url: "https://wa.me/message/SVZAPYZNQV27P1 ", title: "whatsapp", icon: "https://cdn.simpleicons.org/whatsapp" },
   { url: "https://github.com/Liaqat22", title: "github", icon: "https://cdn.simpleicons.org/github" }  // Shopping cart icon
