@@ -1,5 +1,5 @@
+import { Grid2 } from '@mui/material'
 import React from 'react'
-import { Typography } from '@mui/material'
 
 
 function Services() {
@@ -19,24 +19,24 @@ function Services() {
     ]
     return (
         <>
-            <div className='container-fluid '>
-                    <Typography variant='h4' className=' section-head' data-aos="fade-down" gutterBottom>Services</Typography>
-                <div className='row '>
+            <div className='container-fluid flex flex-col gap-3'>
+                    <h3  className=' section-head text-4xl' data-aos="fade-down" >Services</h3>
+                    <Grid2 container spacing={2} columns={12} >
                     {services.map((s,i) => (
-                        <div className='col-md-3 mt-3' key={i+1}>
+                        <Grid2 size={{ xs: 12, sm: 6, md: 3 }} className="mt-3" key={i+1}>
 
-                            <div className="card bg-dark  card-service" data-aos="fade-left">
-                                <div className="card-body">
-                                    <div className=' m-3'>  {s?.icon} {s?.icon2}</div>
-                                    <Typography ><b>{s?.serviceName}</b></Typography>
+                            <div className="card p-3 bg-dark text-center border-none rounded-lg bg-gradient-to-b from-[#5ab2f7] to-[#028cf3]" data-aos="fade-left">
+                                <div className="card-body flex flex-col gap-3">
+                                    <div >  {s?.icon} {s?.icon2}</div>
+                                    <h3 className='text-lg font-semibold' >{s?.serviceName}</h3>
                                     {/* <Typography variant='body2'>{s.description}</Typography> */}
                                 </div>
                             </div>
-                        </div>
+                        </Grid2>
                     ))}
 
 
-                </div>
+                </Grid2>
 
             </div>
         </>

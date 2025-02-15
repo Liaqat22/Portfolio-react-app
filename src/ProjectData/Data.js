@@ -1,8 +1,14 @@
- export const projectContent = [
+export const projectContent = [
   {
-    projectname: "Admin Panel ",
+    projectname: "CRM Admin Panel ",
     ProjectImage : "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1729438929/image_mf2pfr.jpg",
     ProjectURL: "https://admin-dashboard-react-phi.vercel.app/",
+
+  },
+  {
+    projectname: "Furniro Furniture ",
+    ProjectImage : "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1736688091/banner_dhplf2.png",
+    ProjectURL: "https://furniro-furniture-alpha.vercel.app/",
 
   },
   {
@@ -11,14 +17,24 @@
     ProjectURL: "https://invoicing-app-three.vercel.app/",
 
   },
-  {
-    projectname: "Zkat App",
-    projectDescription: "Zkat is a React-based app with Material UI, designed for an enhanced user experience. It calculates Zakat, tracks remaining Zakat amounts, and allows you to view and manage donations to the needy.",
-    ProjectImage : "https://static.vecteezy.com/system/resources/previews/021/594/244/original/pay-zakat-or-flat-design-of-donate-or-online-zakat-application-for-3d-ramadan-concept-vector.jpg",
-    ProjectURL: "https://zkat-app.vercel.app/",
-    createdAt: "2024-08-20",
-    updatedAt: "2024-08-20"
+    {
+    projectname: "Tech-Store",
+    projectDescription: "Experience seamless online shopping on our cutting-edge React JS-powered eCommerce platform. Explore a diverse product range, navigate effortlessly with a user-friendly interface, and shop securely.",
+    ProjectURL: "https://ecommercewebsitebyme.netlify.app/",
+    ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Fecommerce_1_0.png?alt=media&token=10e79a44-3d61-4234-a082-bfaaf6df6390",
+    createdAt: "2023-12-17",
+    updatedAt: "2023-12-17"
   },
+    {
+    projectname: "Firebase CRUD App",
+    projectDescription: "React with Firebase server, Firebase methods, user authentication, Google login, signup page, add/edit/view/delete data, responsive user interface. Email: test@gmail.com. Password: 123456.",
+    ProjectURL: "https://firbase-react-crud-app.vercel.app/",
+    ProjectImage : "https://blog.openreplay.com/images/build-a-crud-app-with-react-and-firebase/images/hero.png",
+    // ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Ffirebase_0.png?alt=media&token=e4b209a2-820c-4237-8067-3a343d8d1b11",
+    createdAt: "2024-01-31",
+    updatedAt: "2024-01-31"
+  },
+ 
   {
     projectname: "Firebase Chatting App",
     projectDescription: "React with Firebase server, real-time chat app. Open the app on separate browser tabs and log in with different emails and passwords: Person 1: email: test@gmail.com, password: 123456. Person 2: email: test2@gmail.com, password: 123456.",
@@ -37,30 +53,13 @@
     createdAt: "2024-01-17",
     updatedAt: "2024-01-31"
   },
-  {
-    projectname: "Firebase CRUD App",
-    projectDescription: "React with Firebase server, Firebase methods, user authentication, Google login, signup page, add/edit/view/delete data, responsive user interface. Email: test@gmail.com. Password: 123456.",
-    ProjectURL: "https://firbase-react-crud-app.vercel.app/",
-    ProjectImage : "https://blog.openreplay.com/images/build-a-crud-app-with-react-and-firebase/images/hero.png",
-    // ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Ffirebase_0.png?alt=media&token=e4b209a2-820c-4237-8067-3a343d8d1b11",
-    createdAt: "2024-01-31",
-    updatedAt: "2024-01-31"
-  },
- 
-  // {
-  //   projectname: "Expense Management System",
-  //   projectDescription: "API integration, user authentication, add, update, view, and delete transaction functionality, filters, analytics, and a responsive user interface. Email: user@gmail.com. Password: 123456.",
-  //   ProjectURL: "https://lively-mite-gear.cyclic.app/",
-  //   createdAt: "2023-12-17",
-  //   updatedAt: "2024-01-31"
-  // },
-  {
-    projectname: "Tech-Store",
-    projectDescription: "Experience seamless online shopping on our cutting-edge React JS-powered eCommerce platform. Explore a diverse product range, navigate effortlessly with a user-friendly interface, and shop securely.",
-    ProjectURL: "https://ecommercewebsitebyme.netlify.app/",
-    ProjectImage : "https://firebasestorage.googleapis.com/v0/b/chatting-app-9ba60.appspot.com/o/upload%2Fimages%2Fecommerce_1_0.png?alt=media&token=10e79a44-3d61-4234-a082-bfaaf6df6390",
-    createdAt: "2023-12-17",
-    updatedAt: "2023-12-17"
+ {
+    projectname: "Zkat App",
+    projectDescription: "Zkat is a React-based app with Material UI, designed for an enhanced user experience. It calculates Zakat, tracks remaining Zakat amounts, and allows you to view and manage donations to the needy.",
+    ProjectImage : "https://static.vecteezy.com/system/resources/previews/021/594/244/original/pay-zakat-or-flat-design-of-donate-or-online-zakat-application-for-3d-ramadan-concept-vector.jpg",
+    ProjectURL: "https://zkat-app.vercel.app/",
+    createdAt: "2024-08-20",
+    updatedAt: "2024-08-20"
   },
   {
     projectname: "Dashboard",
@@ -70,6 +69,15 @@
     createdAt: "2023-12-17",
     updatedAt: "2024-06-26"
   },
+  // {
+  //   projectname: "Expense Management System",
+  //   projectDescription: "API integration, user authentication, add, update, view, and delete transaction functionality, filters, analytics, and a responsive user interface. Email: user@gmail.com. Password: 123456.",
+  //   ProjectURL: "https://lively-mite-gear.cyclic.app/",
+  //   createdAt: "2023-12-17",
+  //   updatedAt: "2024-01-31"
+  // },
+
+ 
   {
     projectname: "Jessy Portfolio",
     projectDescription: "Discover the enchanting world of my fully responsive and captivating portfolio website, created with React. A single-page application that showcases my projects with seamless navigation and delightful animations. Let's collaborate and turn your vision into a digital masterpiece!",

@@ -1,38 +1,38 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { projectContent } from '../ProjectData/Data';
+import {  Grid2 } from '@mui/material'
 import ProjectCard from './ProjectCard';
-import {  Typography } from '@mui/material';
 
 
 function Projects() {
 
   return (
-    <>
-      <div className='container-fluid'>
-        <Typography variant="h4"  className=' section-head' data-aos="fade-down" gutterBottom> latest projects</Typography>
-        <div className='row'>
-          {projectContent?.slice(0, 4)?.map((p, i) => (
+    <div className='container-fluid flex flex-col gap-3'>
+      <h3 className=' section-head text-4xl' data-aos="fade-down" >My Projects</h3>
 
-            <div className='col-md-3 mt-3' key={i + 1}>
+      <Grid2 container spacing={2} columns={12} className="mt-3">
+          {projectContent.slice(0,4).map((p, i) => (
+            <Grid2 size={{ xs: 12, sm: 6, md: 3 }} className=' mt-3 !cursor-pointer' key={i}>
               <ProjectCard cardDetails={p} />
-            </div>
+
+            </Grid2>
           ))}
-        </div>
-      </div>
+        </Grid2>
 
 
-      <div className='d-flex justify-content-center pb-3 '>
-        <NavLink className='btn btn-light m-3 viewall' to='/portfolio' style={{ color: "#005199" }}>
-          <Typography variant='h6' >
-            <b>  View All </b>
-          </Typography>
+      <div className='flex justify-center pb-3 mt-3'>
+        <NavLink className=' viewall' to='/portfolio' >
+           
+          <button  className='px-3 py-2  bg-gradient-to-l from-[#2095ac] to-[#0166b3] font-semibold flex items-center justify-center min-w-[140px] rounded-sm'>
+                  <span className='text-white'> View All</span>
+                </button>
         </NavLink>
 
       </div>
 
 
-    </>
+    </div>
   )
 }
 

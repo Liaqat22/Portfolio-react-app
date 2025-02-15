@@ -1,7 +1,8 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { message } from 'antd';
-import { TextField, Button, Box, Typography,Link,IconButton, Grid2 } from '@mui/material';
+import { TextField, Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -27,121 +28,128 @@ function Contacts() {
   }
 
   return (
-    <div>
+    <>
 
       <div className='container-fluid '>
-        <div className='row d-flex align-items-center'>
-          <div className='col-md-6'>
-            <Typography className=' head2'>- Contact me</Typography>
-            <Typography variant='h4' className='head1 m-2'>Connect with me</Typography>
-            <Typography  data-aos="fade-left">
-            Reach out for any inquiries or collaboration opportunities. I'm here to help with your web development needs and would love to hear from you!
-            </Typography>
+        <div className='row '>
+          <div className='col-md-6 mt-3 flex flex-col gap-3'>
 
-          {/* Phone Section */}
-      <Grid2 container spacing={1} className='m-3' style={{ transitionDelay: '0.3s' }} display="flex" alignItems="center" >
-        <Grid2 size={3}>
-          <IconButton>
-            {/* <PhoneIcon /> */}
-            <i className="fa-solid fa-phone " />
-          </IconButton>
-        </Grid2>
-        <Grid2 size={5}>
-          <Typography >
-            +923446505923 <br />
-            +923211961948
-          </Typography>
-        </Grid2>
-      </Grid2>
+            <section>
+              <p className='text-3xl font-semibold mb-3'>Connect with me</p>
+              <p className='text-[1.1rem] text-justify px-2' data-aos="fade-left">
+              Feel free to reach out for inquiries or collaborations! I’m here to help with web development, UI creation, and performance optimization, crafting seamless, high-performance digital experiences. Let’s bring your vision to life!
+              </p>
+            </section>
 
-      {/* Email Section */}
-      <Grid2 container spacing={1} className='m-3' style={{ transitionDelay: '0.4s' }} display="flex" alignItems="center" >
-        <Grid2 size={3}>
-          <Link href = "https://liaqatali097306@gmail.com" underline='none'>
-          <IconButton>
-            {/* <EmailIcon /> */}
-            <i className="fa-solid fa-envelope " />
-          </IconButton>
-          </Link>
-        </Grid2>
-        <Grid2 size={5} whiteSpace="wrap">
-          <Link href="https://liaqatali097306@gmail.com" underline="none" >
-            <Typography  color='white'>
-              liaqatali097306@gmail.com
-            </Typography>
-          </Link>
-        </Grid2>
-      </Grid2>
+            <section>
+              <List>
+                <ListItem
+                  className='mui-list-item mt-2 text-white tracking-widest flex flex-row gap-3 current:bg-gradient-to-l from-[#2095ac] to-[#0166b3] current:text-white current:w-[85%] rounded-r-xl'
+                  sx={{ textTransform: "capitalize", paddingLeft: "0rem" }}>
+                  <ListItemIcon sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <i className='fa-solid fa-phone-volume text-[#27ae60] text-3xl hover:scale-125 hover:duration-150 cursor-pointer' />
+                  </ListItemIcon>
+                  <ListItemText primary={
+                    <>
+                      <p className="!font-semibold mb-0">+923211961948</p>
+                      <p className="!font-semibold mb-0">+923446505923</p>
+                    </>
+                  } />
+                </ListItem>
+              </List>
+              <List>
+                <ListItem
+                  className='mui-list-item mt-2 text-white tracking-widest flex flex-row gap-3 current:bg-gradient-to-l from-[#2095ac] to-[#0166b3] current:text-white current:w-[85%] rounded-r-xl'
+                  button
+                  component={NavLink}
+                  to="https://liaqatali097306@gmail.com"
+                  sx={{ textTransform: "capitalize", paddingLeft: "0rem" }}>
+                  <ListItemIcon sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <img
+                      className="w-8 hover:scale-125 hover:duration-150  "
+                      src="https://cdn.simpleicons.org/gmail"
+                      alt='email'
+                      loading="lazy"
+                    />
+                  </ListItemIcon>
+                  <ListItemText primary={<p className="lowercase !font-semibold mb-0">liaqatali097306@gmail.com</p>} />
+                </ListItem>
+              </List>
+            </section>
+
 
 
           </div>
-          <div className='col-md-6'>
-          <Box component="form" data-aos="fade-up" sx={{ transitionDelay: '0.5s' }} onSubmit={handleSubmit}>
-      <Box sx={{ mt: 1.5 }}>
-        <TextField 
-          fullWidth 
-          variant="outlined" 
-          label="Full name" 
-          value={name} 
-          required 
-          onChange={(e) => setName(e.target.value)} 
-         />
-      </Box>
-      <Box sx={{ mt: 1.5 }}>
-        <TextField 
-          fullWidth 
-          variant="outlined" 
-          label="Email (Optional)" 
-          value={email} 
-          type="email" 
-          onChange={(e) => setEmail(e.target.value)} 
- 
-        />
-      </Box>
-      <Box sx={{ mt: 1.5 }}>
-        <TextField 
-          fullWidth 
-          variant="outlined" 
-          label="Company name" 
-          value={company} 
-          required 
-          onChange={(e) => setCompany(e.target.value)} 
- 
-        />
-      </Box>
-      <Box sx={{ mt: 1.5 }}>
-        <TextField 
-          fullWidth 
-          variant="outlined" 
-          label="Interview invitation (Optional)" 
-          value={interview} 
-          onChange={(e) => setInterview(e.target.value)} 
- 
-        />
-      </Box>
-      <Box sx={{ mt: 1.5 }}>
-        <TextField 
-          fullWidth 
-          variant="outlined" 
-          label="Message" 
-          value={description} 
-          required 
-          multiline 
-          rows={4} 
-          onChange={(e) => setDescription(e.target.value)} 
-          
-        />
-      </Box>
-      
-              <Button variant="contained" color="info" type="submit" sx={{ color: 'white',fontWeight:"bold",background:"#00b4d8",borderRadius:"2rem",mt: 3  }} className='btn-hover'>
-              Send to me
-              </Button>
-    </Box>
+          <div className='col-md-6 mt-3'>
+            <Box component="form" data-aos="fade-up" sx={{ transitionDelay: '0.5s' }} onSubmit={handleSubmit} className='flex flex-col gap-3'>
+              <Box sx={{ mt: 1.5 }}>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  label="Full name"
+                  value={name}
+                  required
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </Box>
+              <Box sx={{ mt: 1.5 }}>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  label="Email (Optional)"
+                  value={email}
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+
+                />
+              </Box>
+              <Box sx={{ mt: 1.5 }}>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  label="Company name"
+                  value={company}
+                  required
+                  onChange={(e) => setCompany(e.target.value)}
+
+                />
+              </Box>
+              <Box sx={{ mt: 1.5 }}>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  label="Interview invitation (Optional)"
+                  value={interview}
+                  onChange={(e) => setInterview(e.target.value)}
+
+                />
+              </Box>
+              <Box sx={{ mt: 1.5 }}>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  label="Message"
+                  value={description}
+                  required
+                  multiline
+                  rows={4}
+                  onChange={(e) => setDescription(e.target.value)}
+
+                />
+              </Box>
+              <div>
+
+
+                <button type="submit" className='px-3 py-2  bg-gradient-to-l from-[#2095ac] to-[#0166b3] font-semibold flex items-center justify-center min-w-[140px] rounded-sm'>
+                  <span className='text-white'>Send to me</span>
+                </button>
+              </div>
+            </Box>
 
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

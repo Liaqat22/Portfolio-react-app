@@ -1,86 +1,53 @@
 import React from 'react';
-import { Box, Typography, Grid2 } from '@mui/material';
+
 // Import icons
-import html from "../media/icons/html5.png";
-import css from "../media/icons/css3.png";
-import js from "../media/icons/javascript.png";
-import react from "../media/icons/react.png";
-import firebase from "../media/icons/firebase.png";
-import bootstrap from "../media/icons/pngegg.png";
-import github from "../media/icons/github.png";
-import materialUI from "../media/icons/pngwing.com.png";
-import redux from "../media/icons/redux.png";
-import bgimg from "../media/252.jpg";
+
 
 function Skills() {
   const skills = [
-    { skillImg: react, skillName: "react" },
-    { skillImg: firebase, skillName: "firebase" },
-    { skillImg: html, skillName: "html" },
-    { skillImg: css, skillName: "css" },
-    { skillImg: js, skillName: "js" },
-    { skillImg: redux, skillName: "redux" },
-    { skillImg: bootstrap, skillName: "bootstrap" },
-    { skillImg: materialUI, skillName: "materialUI" },
-    { skillImg: github, skillName: "github" },
+    { skillImg: "https://cdn.simpleicons.org/html5", skillName: "HTML5" },
+    { skillImg: "https://cdn.simpleicons.org/css3", skillName: "CSS3" },
+    { skillImg: "https://cdn.simpleicons.org/bootstrap", skillName: "bootstrap" },
+    { skillImg: "https://cdn.simpleicons.org/tailwindcss", skillName: "tailwind css" },
+    { skillImg: "https://cdn.simpleicons.org/javascript", skillName: "javaScript" },
+    { skillImg: "https://cdn.simpleicons.org/react", skillName: "react" },
+    { skillImg: "https://cdn.simpleicons.org/reactquery", skillName: "react query" },
+    { skillImg: "https://cdn.simpleicons.org/redux", skillName: "redux" },
+    { skillImg: "https://cdn.simpleicons.org/firebase ", skillName: "firebase" },
+    { skillImg: "https://cdn.simpleicons.org/socket.io/white", skillName: "socket.io" },
+    { skillImg: "https://cdn.simpleicons.org/mui", skillName: "materialUI" },
+    { skillImg: "https://cdn.simpleicons.org/antdesign", skillName: "antdesign" },
+    { skillImg: "https://cdn.simpleicons.org/github/white", skillName: "github" },
+    { skillImg: "https://static.vecteezy.com/system/resources/previews/021/826/847/non_2x/api-icon-in-flat-style-software-integration-illustration-on-isolated-background-algorithm-programming-sign-business-concept-vector.jpg", skillName: "API integration" },
   ];
 
 
-  // Duplicate the skill array for seamless scrolling
-  const duplicatedSkills = [...skills, ...skills];
 
   return (
-    <>
-      <Typography variant="h4"  className=' section-head' data-aos="fade-down" gutterBottom>
-        Skills
-      </Typography>
-      <Box sx={{
-        overflow: 'hidden',
-        whiteSpace: 'nowrap',
-        py: 3,
-        borderRadius: "1rem",
-        backgroundImage: `url(${bgimg})`,
-        backgroundSize: "cover",
-      }} >
+    <div className=' flex flex-col gap-4'>
+      <h3  className=' section-head text-4xl' data-aos="fade-down">
+      My Tech Stack
+            </h3>
+            <div  className = "flex justify-center gap-5 flex-wrap">
+        {/* Tailwind-based Masonry Grid */}
+        {skills.map((item, i) => (
+          <div div  key={i} className=' p-2  rounded-md flex gap-2 flex-col cursor-pointer' >
+            <img
+              className="w-14 hover:scale-125 hover:duration-150  "
+              src={item.skillImg}
+              alt={`pic ${i}`}
+              loading="lazy"
+            />
+            <div className=' rounded-sm text-center'>
+            <p className='mb-0 text-[.7rem] font-medium capitalize'>{item.skillName}</p>
+            </div>
+            <hr className=' border-1 border-white opacity-100'/>
+          </div>
+        ))}
+      </div>
+      
 
-        <Box
-          sx={{
-            display: 'inline-flex',
-            animation: 'marquee 10s linear infinite', // Slower animation for a longer set
-            '&:hover': {
-              animationPlayState: 'paused',
-            },
-          }}
-        >
-          {duplicatedSkills.map((s, i) => (
-            <Grid2
-              key={i + 1}
-              className="skillsOuter text-center"
-              sx={{ flexShrink: 0, width: '130px', mx: 2 }}
-            >
-              <Box className="skillsInner">
-                <img src={s.skillImg} alt={s.skillName} className="p-2 " />
-              </Box>
-            </Grid2>
-          ))}
-        </Box>
-
-        {/* Custom marquee CSS */}
-        <style>
-          {`
-          @keyframes marquee {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-50%); /* Move only half the length since we have duplicated the skills */
-            }
-          }
-        `}
-        </style>
-      </Box>
-
-    </>
+    </div>
 
   );
 }

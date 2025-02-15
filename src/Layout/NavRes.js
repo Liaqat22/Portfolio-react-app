@@ -1,50 +1,108 @@
-import {  Typography } from '@mui/material'
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import {  Drawer, Box, Grid2, ListItem, List, ListItemIcon, ListItemText, } from '@mui/material';
+import { Link, NavLink } from 'react-router-dom';
+
+
 
 function NavRes() {
-  const list = [
-    { name: "Home", url: "/" },
-    { name: "Portfolio", url: "/portfolio" },
-    { name: "Contact", url: "/contact" },
+    const [open, setOpen] = useState(false); // State to control the drawer
+ 
+const tabs = [
+    { title: "home", url: "/", icon: "fa-solid fa-home", color: "lightgray" }, // Blue
+    { title: "projects", url: "/portfolio", icon: "fa-solid fa-briefcase", color: "#e67e22" }, // Orange
+    { title: "contact", url: "/contact", icon: "fa-solid fa-phone-volume", color: "#27ae60" } // Green
+  ];
+  
+  
+const icons = [
+  { url: "https://liaqatali097306@gmail.com", title: "email", icon: "https://cdn.simpleicons.org/gmail" },
+  { url: "https://www.linkedin.com/in/liaqat-ali-bb086522a/ ", title: "linkedin", icon: "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1739507695/pngwing.com_cio5wh.png" },  // Search icon
+  { url: "https://wa.me/message/SVZAPYZNQV27P1 ", title: "whatsapp", icon: "https://cdn.simpleicons.org/whatsapp" },
+  { url: "https://github.com/Liaqat22", title: "github", icon: "https://cdn.simpleicons.org/github" }  // Shopping cart icon
+];
 
-  ]
-  return (
-    <>
-      <div>
 
-          <i className="fa-solid fa-bars-staggered  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style={{ color: "white" }} />
-        <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ 
-           backgroundImage: `url("https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705062/328_sfqxjz.jpg")`,
-           backgroundSize: 'cover', 
-           backgroundPosition: 'center', 
-           backgroundRepeat: 'no-repeat' }}>
 
-          <div className="text-center p-3 mt-3 ">
-            <i type="button" className="fa-solid fa-xmark fa-2x" data-bs-dismiss="offcanvas" aria-label="Close" style={{ color: "white" }} />
-          </div>
+    const toggleDrawer = () => {
+        setOpen(!open); // Toggle the drawer open/close
+    };
 
-          <div className="offcanvas-body text-center">
-          <Typography variant='h5' fontWeight='600' ><i className="fa-brands fa-react fa-spin fa-spin-reverse" style={{color:' #61DBFB'}}/> <span style={{color:' #61DBFB'}}>React</span> Developer</Typography>
-            <ul className='p-0'>
-              {list.map((t, i) => (
-                <li key={i + 1} className='mt-4' data-bs-dismiss="offcanvas" aria-label="Close" >
-                  <NavLink to={t.url} className="  btn-primary navres"  style={{ background: 'transparent' ,color:"white",textDecoration:"none"}}><Typography variant='h5' ><b>{t.name}</b>  </Typography>
-                   
-                  </NavLink></li>
-              ))}
-            </ul>
-            <div className='mt-5' style={{display:'flex',justifyContent:'space-evenly'}}>
-           <a href='https://liaqatali097306@gmail.com'><i className="fa-solid envelope fa-envelope p-0" style={{color:' #61DBFB',filter:"none"}}/></a> 
-           <a href='https://www.linkedin.com/in/liaqat-ali-bb086522a/'> <i className="fa-brands fa-linkedin" style={{color:' #61DBFB'}}/></a>
-           <a href='https://wa.me/qr/FTMDCAW2J6XEP1'><i className="fa-brands fa-whatsapp" style={{color:' #61DBFB'}}/></a> 
-           <a href='https://github.com/Liaqat22'><i className="fa-brands fa-github" style={{color:' #61DBFB'}}/></a> 
-            </div>
-          </div>
+    const drawerContent = (
+        <div role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer} className = "flex flex-col gap-4 ">
+            <Box className = "flex items-center justify-center mt-3">
+            <Link className="navbar-brand " to="/"   style={{transitionDelay:'0.3s',color:'white'}}><i className="fa-brands fa-react fa-spin fa-spin-reverse" style={{color:' #61DBFB'}}/> <span style={{color:' #61DBFB'}}>React</span> Developer</Link>
+            </Box>
+
+            <List>
+                {tabs?.map((item, i) => (
+                    <ListItem
+                        className='mui-list-item mt-2 text-white tracking-widest current:bg-gradient-to-l from-[#2095ac] to-[#0166b3] current:text-white current:w-[80%] rounded-r-xl'
+                        button
+                        component={NavLink}
+                        to={item?.url}
+                        key={i}
+                        sx={{ textTransform: "capitalize",paddingLeft:"0rem" }}
+                    >
+                        <ListItemIcon sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <i className={` text-lg  ${item.icon} `} style={{color:item.color}} />
+                        </ListItemIcon>
+                        <ListItemText primary={<p className ="!font-semibold mb-0">{item.title}</p>} />
+                    </ListItem>
+                ))}
+            </List>
+
+
+            <List>
+                {icons?.map((item, i) => (
+                    <ListItem
+                        className='mui-list-item mt-2 text-white tracking-widest current:bg-gradient-to-l from-[#2095ac] to-[#0166b3] current:text-white current:w-[85%] rounded-r-xl'
+                        button
+                        component={NavLink}
+                        to={item?.url}
+                        key={i}
+                        sx={{ textTransform: "capitalize",paddingLeft:"0rem" }}
+                        
+                    >
+                        <ListItemIcon sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                        <img
+              className="w-6 hover:scale-125 hover:duration-150  "
+              src={item.icon}
+              alt={`pic ${i}`}
+              loading="lazy"
+            />                        </ListItemIcon>
+                        <ListItemText primary={<p className ="!font-semibold mb-0">{item.title}</p>} />
+                    </ListItem>
+                ))}
+            </List>
+
         </div>
-      </div>
-    </>
-  )
+    );
+    return (
+        <>
+            <Grid2 container spacing={2} columns={12}  className="flex items-center justify-between p-4">
+                <Grid2 size={{ sx: 5, sm: 6 }}>
+                    <div className='logo '>
+                        <div className='logodiv flex  items-center'>
+                        <Link className="navbar-brand " to="/"   style={{transitionDelay:'0.3s',color:'white'}}><i className="fa-brands fa-react fa-spin fa-spin-reverse" style={{color:' #61DBFB'}}/> <span style={{color:' #61DBFB'}}>React</span> Developer</Link>
+                        </div>
+                    </div>
+                </Grid2>
+
+                <Grid2 size={{ sx: 5, sm: 5 }} className="!w-fit">
+                    {/* AppBar with Menu Button */}
+                    <i className='fas fa-bars fa-2xl' onClick={toggleDrawer} />
+                </Grid2>
+            </Grid2>
+
+
+
+
+            {/* Drawer Component */}
+            <Drawer anchor="left" open={open} onClose={toggleDrawer}  >
+                {drawerContent}
+            </Drawer>
+        </>
+    )
 }
 
 export default NavRes
