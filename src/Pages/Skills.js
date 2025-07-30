@@ -6,7 +6,7 @@ import React from 'react';
 function Skills() {
   const skills = [
     { skillImg: "https://cdn.simpleicons.org/html5", skillName: "HTML5" },
-    { skillImg: "https://cdn.simpleicons.org/css3", skillName: "CSS3" },
+    { skillImg: "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1728705013/css3_h0j1iz.png", skillName: "CSS3" },
     { skillImg: "https://cdn.simpleicons.org/bootstrap", skillName: "bootstrap" },
     { skillImg: "https://cdn.simpleicons.org/tailwindcss", skillName: "tailwind css" },
     { skillImg: "https://cdn.simpleicons.org/javascript", skillName: "javaScript" },
